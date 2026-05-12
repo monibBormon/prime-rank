@@ -22,3 +22,17 @@ body {
 .bg-gray{
     background-color: #E8EEF8;
 }
+
+.container{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.green{
+  color:#92c200;
+}
+.light-green-bg{
+  background-color: #E0EBC8;
+}
