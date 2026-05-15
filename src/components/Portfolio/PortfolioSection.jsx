@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   FaChartLine,
   FaClock,
@@ -8,27 +8,36 @@ import {
   FaTimes,
   FaYoutube,
 } from "react-icons/fa";
+import { portfolioData } from "../../data/portfolio";
 import SectionTitle from "../Shared/SectionTitle";
 
-const PortfolioSection = () => {
-  const [activeTab, setActiveTab] = useState("Youtube SEO");
+const PortfolioSection = ({ initialTab = "Youtube SEO" }) => {
+  const [activeTab, setActiveTab] = useState(initialTab);
   const [visibleItems, setVisibleItems] = useState(6);
   const [selectedImg, setSelectedImg] = useState(null);
 
+  // Update activeTab when initialTab prop changes
+  useEffect(() => {
+    if (initialTab) {
+      setActiveTab(initialTab);
+    }
+  }, [initialTab]);
+
   const tabs = [
     { id: "Youtube SEO", icon: <FaYoutube /> },
+    { id: "Organic Subscriber", icon: <FaChartLine /> },
     { id: "Monetization", icon: <FaChartLine /> },
     { id: "Thumbnail", icon: <FaImage /> },
     { id: "Watch Hours", icon: <FaClock /> },
   ];
 
   // Dummy Data
-  const portfolioData = Array.from({ length: 50 }).map((_, i) => ({
-    id: i,
-    category: tabs[i % 4].id,
-    image: `https://picsum.photos/seed/${i + 50}/600/400`,
-    title: `Project ${i + 1}`,
-  }));
+  // const portfolioData = Array.from({ length: 50 }).map((_, i) => ({
+  //   id: i,
+  //   category: "Thumbnail",
+  //   image: `https://picsum.photos/seed/${i + 50}/600/400`,
+  //   title: `Project ${i + 1}`,
+  // }));
 
   const filteredItems = portfolioData.filter(
     (item) => item.category === activeTab,

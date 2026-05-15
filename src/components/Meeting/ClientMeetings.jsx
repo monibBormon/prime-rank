@@ -2,31 +2,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight, FaVideo } from "react-icons/fa";
 import SectionTitle from "../Shared/SectionTitle";
+import { meetingData } from "../../data/meeting";
 
-const meetings = [
-  {
-    id: 1,
-    title: "Strategy Session with UK Agency",
-    img: "https://picsum.photos/seed/m1/800/500",
-  },
-  {
-    id: 2,
-    title: "Monthly SEO Review - US Client",
-    img: "https://picsum.photos/seed/m2/800/500",
-  },
-  {
-    id: 3,
-    title: "Onboarding Call with Ryyan Int.",
-    img: "https://picsum.photos/seed/m3/800/500",
-  },
-];
 
 const ClientMeetings = () => {
   const [index, setIndex] = useState(0);
 
-  const next = () => setIndex((prev) => (prev + 1) % meetings.length);
+  const next = () => setIndex((prev) => (prev + 1) % meetingData.length);
   const prev = () =>
-    setIndex((prev) => (prev - 1 + meetings.length) % meetings.length);
+    setIndex((prev) => (prev - 1 + meetingData.length) % meetingData.length);
 
   // Autoplay Logic
   useEffect(() => {
@@ -37,9 +21,9 @@ const ClientMeetings = () => {
   // Helper function to calculate the layout role of each slide
   const getSlidePosition = (slideIndex) => {
     if (slideIndex === index) return "center";
-    if (slideIndex === (index - 1 + meetings.length) % meetings.length)
+    if (slideIndex === (index - 1 + meetingData.length) % meetingData.length)
       return "left";
-    if (slideIndex === (index + 1) % meetings.length) return "right";
+    if (slideIndex === (index + 1) % meetingData.length) return "right";
     return "hidden";
   };
 
@@ -86,7 +70,7 @@ const ClientMeetings = () => {
         <div className="relative mt-20 max-w-4xl mx-auto h-[350px] md:h-[520px] flex items-center justify-center">
           {/* Slides Container */}
           <div className="relative w-full h-[300px] md:h-[460px] flex items-center justify-center">
-            {meetings.map((meeting, i) => {
+            {meetingData.map((meeting, i) => {
               const position = getSlidePosition(i);
               if (position === "hidden") return null;
 
@@ -161,7 +145,7 @@ const ClientMeetings = () => {
 
         {/* Optional: Visual Pagination Dots */}
         <div className="flex justify-center gap-2 mt-6">
-          {meetings.map((_, i) => (
+          {meetingData.map((_, i) => (
             <button
               key={i}
               onClick={() => setIndex(i)}

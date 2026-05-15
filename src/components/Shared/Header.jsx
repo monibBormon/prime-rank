@@ -35,11 +35,20 @@ function Header() {
 
   const navLinks = [
     {
-      title: "SEO Services",
+      title: "Services",
       hasDropdown: true,
       subItems: [
-        { label: "YouTube SEO", path: "/portfolio" },
-        { label: "Google Ads", path: "/portfolio" },
+        { label: "YouTube SEO", path: "/portfolio?tab=Youtube SEO" },
+        { label: "YouTube Monitaization", path: "/portfolio?tab=Monetization" },
+        {
+          label: "Subscribers Growth",
+          path: "/portfolio?tab=Organic Subscriber",
+        },
+        { label: "Thumbnail  design", path: "/portfolio?tab=Thumbnail" },
+        { label: "Watch Hours", path: "/portfolio?tab=Watch Hours" },
+        { label: "Video Editing", path: "/video-editing" },
+        { label: "Website SEO", path: "/seo" },
+        { label: "Google Ads", path: "/google-ads" },
       ],
     },
     { title: "Client Meetings", path: "/meetings", hasDropdown: false },
@@ -49,7 +58,7 @@ function Header() {
   ];
 
   return (
-    <header className="w-full relative overflow-x-hidden">
+    <header className="w-full relative">
       {/* --- Top Bar (Dark Green) --- */}
       <div className="bg-[#1C4B42]">
         <div className="container mx-auto text-white py-1 flex justify-center items-center gap-2 text-xs md:text-sm font-bold">
