@@ -1,13 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { BiCheckCircle } from "react-icons/bi";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaPaperPlane,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaPaperPlane } from "react-icons/fa";
 import {
   HiOutlineLocationMarker,
   HiOutlineMail,
@@ -32,10 +26,16 @@ const ContactSection = () => {
   };
 
   const socialLinks = [
-    { icon: <FaFacebookF />, link: "#", color: "hover:bg-[#1877F2]" },
-    { icon: <FaLinkedinIn />, link: "#", color: "hover:bg-[#0A66C2]" },
-    { icon: <FaYoutube />, link: "#", color: "hover:bg-[#FF0000]" },
-    { icon: <FaInstagram />, link: "#", color: "hover:bg-[#E4405F]" },
+    {
+      icon: <FaLinkedinIn />,
+      link: "https://www.linkedin.com/in/findfoysalbd",
+      color: "hover:bg-[#0A66C2]",
+    },
+    {
+      icon: <FaInstagram />,
+      link: "https://www.instagram.com/findfoysalbd",
+      color: "hover:bg-[#E4405F]",
+    },
   ];
 
   return (
@@ -70,7 +70,11 @@ const ContactSection = () => {
                     <p className="text-gray-400 text-xs font-bold uppercase tracking-widest">
                       Direct Line
                     </p>
-                    <p className="text-lg font-bold mt-1">+4407311099834</p>
+                    <p className="text-lg font-bold mt-1">
+                      <a href="https://wa.me/8801718002029" className="hover:text-[#92C200]">
+                        +8801718002029
+                      </a>
+                    </p>
                   </div>
                 </div>
 
@@ -83,7 +87,9 @@ const ContactSection = () => {
                       Official Email
                     </p>
                     <p className="text-lg font-bold mt-1">
-                      admin@topratedseoexpert.com
+                      <a href="mailto:info.foysal.yt@gmail.com" className="hover:text-[#92C200]">
+                        info.foysal.yt@gmail.com
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -97,7 +103,7 @@ const ContactSection = () => {
                       Base Location
                     </p>
                     <p className="text-lg font-bold mt-1">
-                      London, United Kingdom
+                      Natore, Bangladesh
                     </p>
                   </div>
                 </div>

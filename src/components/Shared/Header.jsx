@@ -5,12 +5,10 @@ import {
   FaAddressCard,
   FaCaretDown,
   FaEnvelopeOpenText,
-  FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaLongArrowAltRight,
   FaPhoneAlt,
-  FaYoutube,
 } from "react-icons/fa";
 import { SiRocket } from "react-icons/si";
 import { Link, NavLink } from "react-router-dom";
@@ -51,7 +49,7 @@ function Header() {
   ];
 
   return (
-    <header className="w-full font-sans relative">
+    <header className="w-full relative overflow-x-hidden">
       {/* --- Top Bar (Dark Green) --- */}
       <div className="bg-[#1C4B42]">
         <div className="container mx-auto text-white py-1 flex justify-center items-center gap-2 text-xs md:text-sm font-bold">
@@ -62,7 +60,7 @@ function Header() {
 
       {/* --- Middle Info Bar (Lime Green) --- */}
       <div className="bg-[#92C200]">
-        <div className="hidden lg:flex container mx-auto text-white px-10 pt-2 pb-3 justify-between items-center text-sm poppins">
+        <div className="hidden lg:flex max-w-7xl mx-auto text-white px-4 pt-2 pb-3 justify-between items-center text-sm poppins">
           <div className="flex gap-x-8">
             <a
               className="flex items-center gap-2"
@@ -78,15 +76,24 @@ function Header() {
               <span>info.foysal.yt@gmail.com</span>
             </a>
             <div className="flex items-center gap-2">
-              <FaAddressCard size={14} />{" "}
-              <span>3 Muirfield Cresent, E14 9SZ, London</span>
+              <FaAddressCard size={14} /> <span>Natore, Bangladesh</span>
             </div>
           </div>
           <div className="flex items-center gap-x-5 text-lg">
-            <FaFacebook className="cursor-pointer hover:opacity-80" />
-            <FaLinkedin className="cursor-pointer hover:opacity-80" />
-            <FaYoutube className="cursor-pointer hover:opacity-80" />
-            <FaInstagram className="cursor-pointer hover:opacity-80" />
+            <a
+              href="https://www.linkedin.com/in/findfoysalbd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="cursor-pointer hover:opacity-80" />
+            </a>
+            <a
+              href="https://www.instagram.com/findfoysalbd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="cursor-pointer hover:opacity-80" />
+            </a>
           </div>
         </div>
       </div>
@@ -140,7 +147,7 @@ function Header() {
                     to={link.path}
                     className={({ isActive }) =>
                       `relative flex items-center gap-1 font-semibold text-sm transition-colors pb-1 group ${
-                        isActive ? "text-[#92c200]" : "text-[#111]"
+                        isActive ? "text-[#84aa12]" : "text-[#111]"
                       }`
                     }
                   >
@@ -175,14 +182,14 @@ function Header() {
             ))}
           </div>
 
-          <Link
-            to="/book-call"
+          <a
+            href="https://wa.me/8801718002029"
             className={`hidden lg:flex items-center gap-2 bg-[#92C200] text-white px-6 rounded-full font-bold uppercase tracking-wider hover:bg-[#1C4B42] transition-all shadow-lg ${
               isSticky ? "py-2 text-xs" : "py-3.5 text-sm"
             }`}
           >
             Book a Call <FaLongArrowAltRight size={18} />
-          </Link>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -210,7 +217,7 @@ function Header() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween" }}
-              className="fixed top-0 right-0 h-full w-[80%] bg-[#0A252E] z-[100] p-6 text-white"
+              className="fixed top-0 right-0 h-full w-full max-w-[320px] bg-[#0A252E] z-[100] p-6 text-white"
             >
               <div className="flex justify-between items-center mb-10">
                 <Link to="/" onClick={() => setIsMenuOpen(false)}>

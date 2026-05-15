@@ -1,5 +1,4 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
-import logo from "../../assets/logo.png"
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="bg-[#072635] py-[50px]">
@@ -19,11 +18,8 @@ function Footer() {
               </div>
             </div>
             <p className="text-white max-w-[280px] text-[15px] poppins leading-[23px] mt-5">
-              I’m Foysal Ahmed. Currently, I am the Best Advance SEO expert in
-              Bangladesh. Also, I am the one of the Top SEO trainer in
-              Bangladesh with more than 5 years of training career. As a SEO
-              Specialist in Bangladesh, I am proud member of Upwork ( Top Rated
-              Plus) and Level two in Fiverr.
+              Founder & CEO | Level 4 Digital Marketer | SEO & YouTube
+              Monetization Specialist at PrimeRank SEO Solutions
             </p>
           </div>
           <div className="text-white">
@@ -32,16 +28,22 @@ function Footer() {
             </h3>
             <ul className="flex gap-x-2 mt-5">
               <li>
-                <FaFacebook className="text-2xl" />
+                <a
+                  href="https://www.linkedin.com/in/findfoysalbd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="text-2xl" />
+                </a>
               </li>
               <li>
-                <FaLinkedin className="text-2xl" />
-              </li>
-              <li>
-                <FaYoutube className="text-2xl" />
-              </li>
-              <li>
-                <FaInstagram className="text-2xl" />
+                <a
+                  href="https://www.instagram.com/findfoysalbd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram className="text-2xl" />
+                </a>
               </li>
             </ul>
           </div>
@@ -53,7 +55,7 @@ function Footer() {
               Office
             </h3>
             <p className="poppins text-base text-[#b2bec4] mt-3">
-              Dhaka, Bangladesh
+              Natore, Bangladesh
             </p>
           </div>
           <div>
@@ -61,10 +63,17 @@ function Footer() {
               Contact
             </h3>
             <p className="poppins text-base text-[#b2bec4] mt-3">
-               +8801718002029
+              <a href="https://wa.me/8801718002029" className="hover:text-[#92C200]">
+                +8801718002029
+              </a>
             </p>
             <p className="poppins text-base text-[#b2bec4]">
-              info.foysal.yt@gmail.com
+              <a
+                href="mailto:info.foysal.yt@gmail.com"
+                className="hover:text-[#92C200]"
+              >
+                info.foysal.yt@gmail.com
+              </a>
             </p>
           </div>
         </div>

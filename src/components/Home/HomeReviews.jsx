@@ -4,23 +4,108 @@ import SectionTitle from "../Shared/SectionTitle";
 const reviews = [
   {
     id: 1,
-    tag: "DIGITAL MARKETING AGENCY",
-    title: "High Authority Guest Post Backlinks",
-    author: "Michael Turner",
-    service: "Link Building",
+    author: "John Miller",
+    client:"USA",
     testimonial:
-      "Proactive and fast service, exactly as agreed. He placed a high-quality backlink that fits perfectly with our SEO strategy. Highly reliable.",
-    highlights: ["Execution speed", "Backlink quality", "Reliability"],
+      "Excellent SEO service! My website traffic increased significantly within a short time. Very professional and skilled expert.",
   },
   {
     id: 2,
-    tag: "LOCAL SERVICE BUSINESS",
-    title: "SEO Consultation — Business Growth Planning",
-    author: "Olivia Bennett",
-    service: "SEO Consultation",
+    author: "Sarah Williams ",
+    client:"UK",
     testimonial:
-      "Hridoy provided an excellent session. Very easy to communicate with and clearly knows SEO inside out. He answered all our questions and gave us a clear direction.",
-    highlights: ["Strategic thinking", "AI SEO", "High-value consulting"],
+      "Professional YouTube marketing and amazing communication. I’m really satisfied with the results.",
+  },
+  {
+    id: 3,
+    author: "Michael Brown",
+    client:"Canada",
+    testimonial:
+      "Highly recommended for monetization and organic growth. My channel performance improved a lot.",
+  },
+  {
+    id: 4,
+    author: "David Anderson ",
+    client:"Australia",
+    testimonial:
+      "Very experienced SEO specialist. He optimized my website perfectly and improved Google rankings.",
+  },
+  {
+    id: 5,
+    author: "Emma Johnson",
+    client:"USA",
+    testimonial:
+      "Outstanding YouTube promotion service. Real audience growth and excellent support throughout the project.",
+  },
+  {
+    id: 6,
+    author: "Daniel Wilson",
+    client:"Germany",
+    testimonial:
+      "Great communication and fast delivery. My website now gets much better organic traffic.",
+  },
+  {
+    id: 7,
+    author: "Olivia Martinez",
+    client:"Spain",
+    testimonial:
+      "Best YouTube SEO expert I have worked with. My videos started ranking higher very quickly.",
+  },
+  {
+    id: 8,
+    author: "James Taylor",
+    client:"USA",
+    testimonial:
+      "Professional work and honest service. Monetization process became much easier with his guidance.",
+  },
+  {
+    id: 9,
+    author: "Sophia Moore",
+    client:"Italy",
+    testimonial:
+      "Very reliable digital marketer. My business website visibility improved significantly.",
+  },
+  {
+    id: 10,
+    author: "Robert Thomas",
+    client:"France",
+    testimonial:
+      "Amazing results from YouTube marketing. Gained real subscribers and higher engagement.",
+  },
+  {
+    id: 11,
+    author: "Isabella Clark",
+    client:"Canada",
+    testimonial:
+      "Top-quality SEO service with excellent communication. Highly professional and friendly.",
+  },
+  {
+    id: 12,
+    author: "William Harris",
+    client:"UAE",
+    testimonial:
+      "Delivered exactly what was promised. Organic growth on my YouTube channel was impressive.",
+  },
+  {
+    id: 13,
+    author: "Mia Lewis",
+    client:"USA",
+    testimonial:
+      "Fantastic experience working with him. My website ranking and traffic both increased fast.",
+  },
+  {
+    id: 14,
+    author: "Benjamin Walker",
+    client:"Netherlands",
+    testimonial:
+      "Very skilled in YouTube monetization and SEO strategy. I highly recommend this service.",
+  },
+  {
+    id: 15,
+    author: "Charlotte Hall",
+    client:"Sweden",
+    testimonial:
+      "Excellent support and professional attitude. Truly one of the best SEO and YouTube experts online.",
   },
 ];
 
@@ -51,25 +136,25 @@ function HomeReviews() {
               </div>
 
               {/* Industry Tag */}
-              <div className="inline-flex items-center bg-[#E9F3CC] px-4 py-1.5 rounded-full mb-6">
+              {/* <div className="inline-flex items-center bg-[#E9F3CC] px-4 py-1.5 rounded-full mb-6">
                 <div className="w-2 h-2 bg-[#92C200] rounded-full mr-2"></div>
                 <span className="text-[11px] font-bold text-[#92C200] tracking-wider uppercase">
                   {review.tag}
                 </span>
-              </div>
+              </div> */}
 
               {/* Title */}
-              <h3 className="text-[19px] font-bold poppins text-[#333] leading-tight mb-4">
+              {/* <h3 className="text-[19px] font-bold poppins text-[#333] leading-tight mb-4">
                 {review.title}
-              </h3>
+              </h3> */}
 
               {/* Author Row */}
               <div className="flex items-center gap-2 mb-4 text-[#1a1a1a]">
                 <User size={18} fill="currentColor" />
                 <span className="font-bold text-[16px]">
                   {review.author}{" "}
-                  <span className="font-medium text-gray-400 mx-1">·</span>{" "}
-                  {review.service}
+                  <span className="">-</span>{" "}
+                  {review.client}
                 </span>
               </div>
 
@@ -86,7 +171,7 @@ function HomeReviews() {
               </p>
 
               {/* Footer Highlights */}
-              <div className="flex flex-wrap gap-2 pt-4">
+              {/* <div className="flex flex-wrap gap-2 pt-4">
                 {review.highlights.map((item, idx) => (
                   <span
                     key={idx}
@@ -98,7 +183,7 @@ function HomeReviews() {
                     )}
                   </span>
                 ))}
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

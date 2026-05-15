@@ -39,13 +39,13 @@ const AboutHero = () => {
         `}
       </style>
 
-      <div className="container grid grid-cols-1 md:grid-cols-[60%_40%] items-center gap-10">
+      <div className="container grid grid-cols-1 md:grid-cols-2 items-center gap-10">
         {/* Left Column: Content */}
         <div className="space-y-6 order-2 md:order-1">
           <Pill>Hi There!</Pill>
 
-          <h1 className="poppins font-bold text-[34px] lg:text-[62px] leading-[38px] lg:leading-[67px] text-[#1D1D1D]">
-            Top Rated SEO Expert
+          <h1 className="poppins font-bold text-[34px] lg:text-[50px] leading-[38px] lg:leading-[67px] text-[#1D1D1D]">
+            Top Rated Digital Marketer
             <br />
             <div className="flex items-center gap-4 mt-2 animate-hanging">
               {/* Decorative Border before the name */}
@@ -55,26 +55,37 @@ const AboutHero = () => {
           </h1>
 
           <p className="text-[15px] lg:text-lg font-medium text-[#475569] max-w-[650px]">
-            I am a Top Rated Plus Freelancer who have worked for big brand
-            company from last 5 years and boost up a lot of brands. Now I am an{" "}
-            <span className="text-[#E11C88] font-semibold underline">
-              SEO mentor
-            </span>{" "}
-            and Freelancer as well as work for Ryyan International (London,
-            United Kingdom) as a marketing head.
+            Hello, I’m Foysal Ahmed, the Founder & CEO of PrimeRank SEO
+            Solutions. I am a Level 4 Digital Marketer with over 5 years of
+            professional experience in SEO, YouTube growth, and channel
+            monetization.
+          </p>
+          <p className="text-[15px] lg:text-lg font-medium text-[#475569] max-w-[650px]">
+            I specialize in helping businesses, brands, and content creators
+            increase their online visibility through advanced SEO strategies and
+            organic YouTube promotion. My expertise includes Technical SEO,
+            On-Page SEO, Keyword Research, YouTube SEO, audience growth, and
+            monetization strategy.
+          </p>
+          <p className="text-[15px] lg:text-lg font-medium text-[#475569] max-w-[650px]">
+            Over the years, I have worked with clients from different industries
+            to improve search rankings, grow targeted traffic, and build
+            profitable YouTube channels. My goal is always to deliver long-term,
+            sustainable results using safe and effective digital marketing
+            methods.
+          </p>
+          <p className="light-green-bg text-lg font-bold italic px-5 py-1 rounded-2xl">
+            "At PrimeRank SEO Solutions, we focus on professionalism,
+            transparency, and performance-driven growth to help clients achieve
+            real online success."
           </p>
 
-          <div className="flex items-center gap-2 pt-2">
-            <p className="font-semibold text-base text-[#0f172a]">
-              100+ Reviews by students
-            </p>
-            <ReviewStars rating={5} />
-          </div>
-
-          <button className="flex items-center gap-3 bg-[#111111] text-white poppins font-bold text-xs uppercase tracking-wider px-7 py-4 rounded-full shadow-lg hover:bg-[#333333] transition-all hover:gap-5">
-            Book a call
-            <FaArrowRight size={14} className="text-white" />
-          </button>
+          <a href="https://wa.me/8801718002029">
+            <button className="flex items-center gap-3 bg-[#111111] text-white poppins font-bold text-xs uppercase tracking-wider px-7 py-4 rounded-full shadow-lg hover:bg-[#333333] transition-all hover:gap-5">
+              Book a call
+              <FaArrowRight size={14} className="text-white" />
+            </button>
+          </a>
         </div>
 
         {/* Right Column: Image with Badges */}
@@ -97,7 +108,7 @@ const AboutHero = () => {
                     Top Rated
                   </p>
                   <p className="text-lg lg:text-xl poppins font-extrabold text-[#1a1a1a]">
-                    SEO EXPERT
+                    Marketer
                   </p>
                 </div>
 
@@ -107,7 +118,7 @@ const AboutHero = () => {
                     Experience
                   </p>
                   <p className="text-lg lg:text-xl poppins font-extrabold text-[#1a1a1a]">
-                    7+ Years
+                    5+ Years
                   </p>
                 </div>
               </div>

@@ -12,7 +12,7 @@ function Homepage() {
       <HeroSection />
       <HomeAbout />
       <HomeReviews/>
-      <HomeFeatures/>
+      {/* <HomeFeatures/> */}
       <HomeTeam/>
       <HomeCta/>
     </Layout>

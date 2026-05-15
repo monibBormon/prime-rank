@@ -29,7 +29,7 @@ const ProfileCard = () => {
               <p className="text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-1">
                 SEO Project Complete
               </p>
-              <p className="text-2xl font-extrabold text-[#1a1a1a]">3500+</p>
+              <p className="text-2xl font-extrabold text-[#1a1a1a]">500+</p>
             </div>
 
             {/* 4. Bottom Right Floating Card (Experience) */}
@@ -37,7 +37,7 @@ const ProfileCard = () => {
               <p className="text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-1">
                 Experience
               </p>
-              <p className="text-2xl font-extrabold text-[#1a1a1a]">7+ Years</p>
+              <p className="text-2xl font-extrabold text-[#1a1a1a]">5+ Years</p>
             </div>
           </div>
         </div>
