@@ -53,6 +53,7 @@ function Header() {
     },
     { title: "Client Meetings", path: "/meetings", hasDropdown: false },
     { title: "Portfolio", path: "/portfolio", hasDropdown: false },
+    { title: "Pricing", path: "/pricing", hasDropdown: false },
     { title: "About", path: "/about", hasDropdown: false },
     { title: "Contact", path: "/contact", hasDropdown: false },
   ];

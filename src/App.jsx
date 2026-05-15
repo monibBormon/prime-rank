@@ -7,6 +7,7 @@ import MeetingPage from "./pages/MeetingPage";
 import VideoEditingPage from "./pages/VideoEditingPage";
 import WebsiteSeoPage from "./pages/WebsiteSeoPage";
 import GoogleAdsPage from "./pages/GoogleAdsPage";
+import PricingPage from "./pages/PricingPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/video-editing" element={<VideoEditingPage />} />
           <Route path="/seo" element={<WebsiteSeoPage />} />
           <Route path="/google-ads" element={<GoogleAdsPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
         </Routes>
       </BrowserRouter>
     </>
