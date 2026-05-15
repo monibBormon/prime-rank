@@ -17,9 +17,9 @@ const HeroSection = () => {
           </button>
 
           {/* Headline */}
-          <h1 className="text-[32px] lg:text-[80px] bebas leading-[40px] lg:leading-[90px] font-semibold">
-            TOP RATED PLUS <br className="hidden lg:block" /> <span className="text-[#92C200]">SEO</span>
-            <span className="text-[#92C200]"> EXPERT</span> IN <br className="hidden lg:block" /> LONDON
+          <h1 className="text-[32px] lg:text-[80px] bebas leading-[40px] lg:leading-[90px] font-semibold max-w-[500px]">
+            TOP RATED PLUS  <span className="text-[#92C200]">SEO</span>
+            <span className="text-[#92C200]"> EXPERT</span> IN LONDON
           </h1>
 
           {/* Sub-headline */}
@@ -59,26 +59,26 @@ const HeroSection = () => {
           {/* Stats Bar */}
           <div className="grid grid-cols-1 md:grid-cols-4 bg-white rounded-xl shadow-sm border border-gray-100 mt-8 overflow-hidden">
             <div className="p-6 text-center border-b-2 md:border-b-0 hover:bg-[#E5EDD1] duration-300 md:border-r-2 border-gray-300">
-              <div className="text-3xl font-bold text-black">3,500+</div>
-              <div className="text-sm text-gray-600 uppercase">
+              <div className="text-3xl font-bold text-black poppins">3,500+</div>
+              <div className="text-sm text-[#333]">
                 SEO Projects
               </div>
             </div>
             <div className="p-6 text-center border-b-2 md:border-b-0 hover:bg-[#E5EDD1] duration-300 md:border-r-2 border-gray-300">
-              <div className="text-3xl font-bold text-black">98%</div>
-              <div className="text-sm text-gray-600 uppercase">
+              <div className="text-3xl font-bold text-black poppins">98%</div>
+              <div className="text-sm text-[#333]">
                 Job Success Rate
               </div>
             </div>
             <div className="p-6 text-center border-b-2 md:border-b-0 hover:bg-[#E5EDD1] duration-300 md:border-r-2 border-gray-300">
-              <div className="text-3xl font-bold text-black">7+</div>
-              <div className="text-sm text-gray-600 uppercase">
+              <div className="text-3xl font-bold text-black poppins">7+</div>
+              <div className="text-sm text-[#333]">
                 Years Experience
               </div>
             </div>
             <div className="p-6 text-center border-b-2 md:border-b-0 hover:bg-[#E5EDD1] duration-300 border-gray-300">
-              <div className="text-3xl font-bold text-black">500+</div>
-              <div className="text-sm text-gray-600 uppercase">
+              <div className="text-3xl font-bold text-black poppins">500+</div>
+              <div className="text-sm text-[#333]">
                 Brands
               </div>
             </div>

@@ -1,6 +1,9 @@
 import HeroSection from "../components/Home/Hero";
 import HomeAbout from "../components/Home/HomeAbout";
+import HomeCta from "../components/Home/HomeCta";
+import HomeFeatures from "../components/Home/HomeFeatures";
 import HomeReviews from "../components/Home/HomeReviews";
+import HomeTeam from "../components/Home/HomeTeam";
 import Layout from "../components/Shared/Layout";
 
 function Homepage() {
@@ -9,6 +12,9 @@ function Homepage() {
       <HeroSection />
       <HomeAbout />
       <HomeReviews/>
+      <HomeFeatures/>
+      <HomeTeam/>
+      <HomeCta/>
     </Layout>
   );
 }

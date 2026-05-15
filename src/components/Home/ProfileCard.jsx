@@ -20,7 +20,7 @@ const ProfileCard = () => {
               <img
                 src={userImg}
                 alt="Profile"
-                className="w-full h-auto object-cover block"
+                className="w-full h-[380px] md:h-[480px] object-cover block"
               />
             </div>
 

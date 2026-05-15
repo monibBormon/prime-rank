@@ -23,24 +23,26 @@ const reviews = [
     highlights: ["Strategic thinking", "AI SEO", "High-value consulting"],
   },
 ];
+
 function HomeReviews() {
   return (
     <div className="py-[50px]">
       <div className="container">
         <SectionTitle
-          title="Reviews as a Top Rated SEO Consultant
-"
-          subtitle="Verified Reviews
-"
+          title="Reviews as a Top Rated SEO Consultant"
+          subtitle="Verified Reviews"
         />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 bg-gray-50">
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="relative w-full bg-white rounded-3xl p-5 shadow-sm border border-gray-200 
-                     transition-all duration-300 hover:shadow-xl hover:border-t-4 hover:border-t-[#92C200] group"
+              className="relative w-full bg-white rounded-3xl p-5 shadow-sm border border-[#92C200] 
+                         transition-all duration-300 hover:shadow-xl hover:-translate-y-[5px] group overflow-hidden"
             >
+              {/* Animated Top Border - Slides from Left to Right */}
+              <div className="absolute top-0 left-0 w-0 h-[4px] bg-[#92C200] transition-all duration-500 ease-in-out group-hover:w-full" />
+
               {/* Top ID Badge */}
               <div className="w-10 h-10 rounded-lg bg-[#E9F3CC] flex items-center justify-center mb-6">
                 <span className="text-black font-bold border-2 border-black rounded-full w-6 h-6 flex items-center justify-center text-xs">
@@ -57,14 +59,14 @@ function HomeReviews() {
               </div>
 
               {/* Title */}
-              <h3 className="text-[22px] font-black text-[#1a1a1a] leading-tight mb-4">
+              <h3 className="text-[19px] font-bold poppins text-[#333] leading-tight mb-4">
                 {review.title}
               </h3>
 
               {/* Author Row */}
               <div className="flex items-center gap-2 mb-4 text-[#1a1a1a]">
                 <User size={18} fill="currentColor" />
-                <span className="font-bold text-[15px]">
+                <span className="font-bold text-[16px]">
                   {review.author}{" "}
                   <span className="font-medium text-gray-400 mx-1">·</span>{" "}
                   {review.service}
@@ -79,7 +81,7 @@ function HomeReviews() {
               </div>
 
               {/* Testimonial Quote */}
-              <p className="text-[#4a4a4a] italic text-[17px] leading-relaxed mb-10">
+              <p className="text-[#333] italic poppins text-[16px] leading-[24px] mb-10">
                 "{review.testimonial}"
               </p>
 
