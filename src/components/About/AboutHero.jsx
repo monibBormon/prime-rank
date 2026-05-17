@@ -97,7 +97,7 @@ const AboutHero = () => {
                 <div className="overflow-hidden rounded-[40px]">
                   <img
                     src={userImg}
-                    alt="Profile"
+                    alt="Foysal Ahmed - Digital Marketer Youtube"
                     className="w-full h-[320px] md:h-[500px] object-cover block hover:scale-105 transition-transform duration-700"
                   />
                 </div>
