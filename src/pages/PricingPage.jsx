@@ -242,7 +242,7 @@ const PricingPage = () => {
   return (
     <>
       <PageSEO
-        title="Pricing & Packages"
+        title="Pricing"
         description="Transparent pricing for YouTube SEO, video editing, website SEO, and Google Ads packages. Choose the right plan for your business growth."
         keywords="pricing, packages, YouTube SEO packages, digital marketing plans, affordable services"
         url="/pricing"

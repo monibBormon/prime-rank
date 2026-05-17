@@ -71,7 +71,7 @@ const WebsiteSeoPage = () => {
   return (
     <>
       <PageSEO
-        title="Website SEO Services"
+        title="Website SEO"
         description="Comprehensive website SEO services including technical optimization, performance tuning, and content strategy to rank on page 1 of search results."
         keywords="website SEO, technical SEO, search engine optimization, on-page SEO, content optimization"
         url="/seo"

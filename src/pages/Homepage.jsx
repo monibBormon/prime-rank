@@ -10,7 +10,7 @@ function Homepage() {
   return (
     <>
       <PageSEO
-        title="Digital Marketing Agency | YouTube SEO & Video Optimization"
+        title="Digital Marketing Agency"
         description="Prime Rank is a leading digital marketing agency specializing in YouTube SEO, video optimization, website SEO, and Google Ads management to boost your online presence."
         keywords="YouTube SEO, video marketing, digital marketing agency, online growth, content optimization"
         url="/"

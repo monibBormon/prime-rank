@@ -65,7 +65,7 @@ const VideoEditingPage = () => {
   return (
     <>
       <PageSEO
-        title="Video Editing Services"
+        title="Video Editing"
         description="Professional video editing services including YouTube optimization, shorts editing, reels creation, and cinematic brand videos for maximum engagement."
         keywords="video editing, YouTube editing, video production, content creation, shorts editing, reels"
         url="/video-editing"

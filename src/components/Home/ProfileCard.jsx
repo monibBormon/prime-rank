@@ -19,7 +19,7 @@ const ProfileCard = () => {
             <div className="overflow-hidden rounded-[40px]">
               <img
                 src={userImg}
-                alt="Profile"
+                alt="Foysal Ahmed"
                 className="w-full h-[380px] md:h-[480px] object-cover block"
               />
             </div>

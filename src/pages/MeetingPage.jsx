@@ -8,7 +8,7 @@ function MeetingPage() {
   return (
     <>
       <PageSEO
-        title="Client Meetings & Consultation"
+        title="Schedule Consultation"
         description="Schedule a consultation with Prime Rank's experts to discuss your digital marketing strategy and YouTube SEO needs."
         keywords="consultation, client meetings, digital strategy, expert advice"
         url="/meetings"

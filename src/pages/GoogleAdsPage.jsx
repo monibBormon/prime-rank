@@ -71,7 +71,7 @@ const GoogleAdsPage = () => {
   return (
     <>
       <PageSEO
-        title="Google Ads Management"
+        title="Google Ads"
         description="Expert Google Ads management with high-intent targeting, compelling ad copy, and optimized conversions for profitable ROAS and sustainable growth."
         keywords="Google Ads, paid advertising, Google PPC, search ads, conversion optimization"
         url="/google-ads"
