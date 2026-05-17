@@ -1,17 +1,18 @@
+import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Homepage from "./pages/Homepage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import PortfolioPage from "./pages/PortfolioPage";
+import GoogleAdsPage from "./pages/GoogleAdsPage";
+import Homepage from "./pages/Homepage";
 import MeetingPage from "./pages/MeetingPage";
+import PortfolioPage from "./pages/PortfolioPage";
+import PricingPage from "./pages/PricingPage";
 import VideoEditingPage from "./pages/VideoEditingPage";
 import WebsiteSeoPage from "./pages/WebsiteSeoPage";
-import GoogleAdsPage from "./pages/GoogleAdsPage";
-import PricingPage from "./pages/PricingPage";
 
 function App() {
   return (
-    <>
+    <HelmetProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
@@ -25,7 +26,7 @@ function App() {
           <Route path="/pricing" element={<PricingPage />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </HelmetProvider>
   );
 }
 

@@ -25,19 +25,19 @@ const ProfileCard = () => {
             </div>
 
             {/* 3. Top Left Floating Card (SEO Project) */}
-            <div className="absolute -left-12 top-10 bg-white p-4 rounded-2xl shadow-lg border border-gray-50 min-w-[150px] z-20">
-              <p className="text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-1">
+            <div className="absolute -left-12 top-3 lg:top-10 bg-white p-2 lg:p-4 rounded-2xl shadow-lg border border-gray-50 min-w-[150px] z-20">
+              <p className="text-[8px] lg:text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-1">
                 SEO Project Complete
               </p>
-              <p className="text-2xl font-extrabold text-[#1a1a1a]">500+</p>
+              <p className="text-base lg:text-2xl font-extrabold text-[#1a1a1a]">500+</p>
             </div>
 
             {/* 4. Bottom Right Floating Card (Experience) */}
-            <div className="absolute -right-8 bottom-10 bg-white p-4 rounded-2xl shadow-lg border border-gray-50 min-w-[150px] z-20">
-              <p className="text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-1">
+            <div className="absolute -right-8 bottom-10 bg-white p-2 lg:p-4 rounded-2xl shadow-lg border border-gray-50 min-w-[150px] z-20">
+              <p className="text-[8px] lg:text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-1">
                 Experience
               </p>
-              <p className="text-2xl font-extrabold text-[#1a1a1a]">5+ Years</p>
+              <p className="text-base lg:text-2xl font-extrabold text-[#1a1a1a]">5+ Years</p>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import ProfileCard from "./ProfileCard";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-screen bg-gray pt-10 pb-20 overflow-hidden">
+    <section className="relative w-full bg-gray pt-10 pb-14 lg:pb-20 overflow-hidden">
       <div className="container w-full grid grid-cols-1 lg:grid-cols-[60%_40%] gap-5 items-center">
         {/* --- Left Content --- */}
         <div className="z-10 order-2 lg:order-1">
@@ -45,7 +45,7 @@ const HeroSection = () => {
               <div className="text-3xl font-bold text-black poppins">5+</div>
               <div className="text-sm text-[#333]">Years Experience</div>
             </div>
-            <div className="p-6 text-center border-b-2 md:border-b-0 hover:bg-[#E5EDD1] duration-300 border-gray-300">
+            <div className="p-6 text-center md:border-b-0 hover:bg-[#E5EDD1] duration-300 border-gray-300">
               <div className="text-3xl font-bold text-black poppins">200+</div>
               <div className="text-sm text-[#333]">Brands</div>
             </div>

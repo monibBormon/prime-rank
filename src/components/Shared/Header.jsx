@@ -5,6 +5,7 @@ import {
   FaAddressCard,
   FaCaretDown,
   FaEnvelopeOpenText,
+  FaFire,
   FaInstagram,
   FaLinkedin,
   FaLongArrowAltRight,
@@ -63,8 +64,8 @@ function Header() {
       {/* --- Top Bar (Dark Green) --- */}
       <div className="bg-[#1C4B42]">
         <div className="container mx-auto text-white py-1 flex justify-center items-center gap-2 text-xs md:text-sm font-bold">
-          <SiRocket size={16} />
-          <span>Top Rated Plus SEO Expert</span>
+          <FaFire size={16} />
+          <span>Top Rated Digital Marketer</span>
         </div>
       </div>
 

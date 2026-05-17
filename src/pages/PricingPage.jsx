@@ -11,6 +11,7 @@ import {
   Zap,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import PageSEO from "../components/SEO/PageSEO";
 import Layout from "../components/Shared/Layout";
 
 const packages = [
@@ -239,69 +240,77 @@ const ServiceCard = ({ item, index }) => {
 
 const PricingPage = () => {
   return (
-    <Layout>
-      <div
-        className="bg-[#f8ffe9] text-[#1C4B42] py-12 md:py-24 min-h-screen relative overflow-hidden"
-        id="pricing"
-      >
-        {/* Soft Ambient Brand Background Blobs */}
-        <div className="absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-[#92C200]/5 blur-[140px] rounded-full pointer-events-none" />
-        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-[#1C4B42]/5 blur-[160px] rounded-full pointer-events-none" />
+    <>
+      <PageSEO
+        title="Pricing & Packages"
+        description="Transparent pricing for YouTube SEO, video editing, website SEO, and Google Ads packages. Choose the right plan for your business growth."
+        keywords="pricing, packages, YouTube SEO packages, digital marketing plans, affordable services"
+        url="/pricing"
+      />
+      <Layout>
+        <div
+          className="bg-[#f8ffe9] text-[#1C4B42] py-12 md:py-24 min-h-screen relative overflow-hidden"
+          id="pricing"
+        >
+          {/* Soft Ambient Brand Background Blobs */}
+          <div className="absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-[#92C200]/5 blur-[140px] rounded-full pointer-events-none" />
+          <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-[#1C4B42]/5 blur-[160px] rounded-full pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Main Top Header Block */}
-          <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24 space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1C4B42] text-[#92C200] text-xs font-bold uppercase tracking-widest border border-[#1C4B42]/10">
-              Pricing Matrices
-            </div>
-            <motion.h2
-              initial={{ opacity: 0, y: -10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-3xl md:text-5xl font-black tracking-tight text-[#1C4B42]"
-            >
-              Premium Architecture Packages
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto"
-            >
-              Elevate your ecosystem with professional target SEO, asset design,
-              and visibility growth blueprints tailored for results.
-            </motion.p>
-          </div>
-
-          {/* Pricing Sections Array */}
-          <div className="space-y-16 md:space-y-28">
-            {packages.map((section, sectionIdx) => (
-              <div key={sectionIdx} className="space-y-6 md:space-y-8">
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  className="flex items-center gap-4"
-                >
-                  <div className="h-7 w-1 bg-[#1C4B42] rounded-full" />
-                  <h3 className="text-xl md:text-2xl font-black text-[#1C4B42] tracking-tight">
-                    {section.category}
-                  </h3>
-                </motion.div>
-
-                {/* Fixed Grid Wrapper Layout */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                  {section.items.map((item, idx) => (
-                    <ServiceCard key={idx} item={item} index={idx} />
-                  ))}
-                </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            {/* Main Top Header Block */}
+            <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24 space-y-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1C4B42] text-[#92C200] text-xs font-bold uppercase tracking-widest border border-[#1C4B42]/10">
+                Pricing Matrices
               </div>
-            ))}
+              <motion.h2
+                initial={{ opacity: 0, y: -10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-3xl md:text-5xl font-black tracking-tight text-[#1C4B42]"
+              >
+                Premium Architecture Packages
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto"
+              >
+                Elevate your ecosystem with professional target SEO, asset
+                design, and visibility growth blueprints tailored for results.
+              </motion.p>
+            </div>
+
+            {/* Pricing Sections Array */}
+            <div className="space-y-16 md:space-y-28">
+              {packages.map((section, sectionIdx) => (
+                <div key={sectionIdx} className="space-y-6 md:space-y-8">
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    className="flex items-center gap-4"
+                  >
+                    <div className="h-7 w-1 bg-[#1C4B42] rounded-full" />
+                    <h3 className="text-xl md:text-2xl font-black text-[#1C4B42] tracking-tight">
+                      {section.category}
+                    </h3>
+                  </motion.div>
+
+                  {/* Fixed Grid Wrapper Layout */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    {section.items.map((item, idx) => (
+                      <ServiceCard key={idx} item={item} index={idx} />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 };
 

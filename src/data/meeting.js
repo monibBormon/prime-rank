@@ -1,24 +1,21 @@
-import m1 from "../assets/meetings/1.jpeg";
-import m10 from "../assets/meetings/10.png";
-import m11 from "../assets/meetings/11.png";
-import m12 from "../assets/meetings/12.png";
+import m1 from "../assets/meetings/1.jpg";
+import m2 from "../assets/meetings/2.jpg";
+import m3 from "../assets/meetings/3.jpg";
+import m4 from "../assets/meetings/4.jpg";
+import m5 from "../assets/meetings/5.jpg";
+import m6 from "../assets/meetings/6.jpg";
+import m7 from "../assets/meetings/7.jpg";
+import m8 from "../assets/meetings/8.jpg";
+import m9 from "../assets/meetings/9.jpg";
+import m10 from "../assets/meetings/10.jpeg";
+import m11 from "../assets/meetings/11.jpg";
+import m12 from "../assets/meetings/12.jpg";
 import m13 from "../assets/meetings/13.jpeg";
-import m14 from "../assets/meetings/14.jpeg";
-import m15 from "../assets/meetings/15.jpeg";
-import m16 from "../assets/meetings/16.jpeg";
-import m17 from "../assets/meetings/17.jpeg";
-import m18 from "../assets/meetings/18.jpeg";
-import m19 from "../assets/meetings/19.jpeg";
-import m2 from "../assets/meetings/2.jpeg";
-import m20 from "../assets/meetings/20.jpeg";
-import m21 from "../assets/meetings/21.jpeg";
-import m3 from "../assets/meetings/3.jpeg";
-import m4 from "../assets/meetings/4.jpeg";
-import m5 from "../assets/meetings/5.jpeg";
-import m6 from "../assets/meetings/6.jpeg";
-import m7 from "../assets/meetings/7.jpeg";
-import m8 from "../assets/meetings/8.jpeg";
-import m9 from "../assets/meetings/9.jpeg";
+import m14 from "../assets/meetings/14.jpg";
+import m15 from "../assets/meetings/15.jpg";
+import m16 from "../assets/meetings/16.jpg";
+import m17 from "../assets/meetings/17.jpg";
+import m18 from "../assets/meetings/18.jpg";
 
 export const meetingData = [
   {
@@ -92,17 +89,5 @@ export const meetingData = [
   {
     id: 18,
     img: m18,
-  },
-  {
-    id: 19,
-    img: m19,
-  },
-  {
-    id: 20,
-    img: m20,
-  },
-  {
-    id: 21,
-    img: m21,
   },
 ];
