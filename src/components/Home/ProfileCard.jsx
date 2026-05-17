@@ -25,7 +25,7 @@ const ProfileCard = () => {
             </div>
 
             {/* 3. Top Left Floating Card (SEO Project) */}
-            <div className="absolute -left-12 top-3 lg:top-10 bg-white p-2 lg:p-4 rounded-2xl shadow-lg border border-gray-50 min-w-[150px] z-20">
+            <div className="absolute -left-12 -top-2 md:top-3 lg:top-10 bg-white p-2 lg:p-4 rounded-2xl shadow-lg border border-gray-50 min-w-[150px] z-20">
               <p className="text-[8px] lg:text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-1">
                 SEO Project Complete
               </p>
