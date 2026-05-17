@@ -9,7 +9,6 @@ import {
   FaNetworkWired,
   FaSearchDollar,
 } from "react-icons/fa";
-import PageSEO from "../components/SEO/PageSEO";
 import Layout from "../components/Shared/Layout";
 
 // Unique SEO data layers
@@ -70,12 +69,6 @@ const WebsiteSeoPage = () => {
 
   return (
     <>
-      <PageSEO
-        title="Website SEO"
-        description="Comprehensive website SEO services including technical optimization, performance tuning, and content strategy to rank on page 1 of search results."
-        keywords="website SEO, technical SEO, search engine optimization, on-page SEO, content optimization"
-        url="/seo"
-      />
       <Layout>
         <section className="py-[100px] bg-[#fbfff2] text-[#1C4B42] overflow-hidden relative">
           {/* Soft Ambient Glows adjusted for white background */}

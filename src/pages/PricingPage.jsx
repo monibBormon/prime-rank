@@ -11,7 +11,6 @@ import {
   Zap,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import PageSEO from "../components/SEO/PageSEO";
 import Layout from "../components/Shared/Layout";
 
 const packages = [
@@ -241,12 +240,6 @@ const ServiceCard = ({ item, index }) => {
 const PricingPage = () => {
   return (
     <>
-      <PageSEO
-        title="Pricing"
-        description="Transparent pricing for YouTube SEO, video editing, website SEO, and Google Ads packages. Choose the right plan for your business growth."
-        keywords="pricing, packages, YouTube SEO packages, digital marketing plans, affordable services"
-        url="/pricing"
-      />
       <Layout>
         <div
           className="bg-[#f8ffe9] text-[#1C4B42] py-12 md:py-24 min-h-screen relative overflow-hidden"

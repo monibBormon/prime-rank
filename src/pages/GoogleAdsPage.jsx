@@ -9,7 +9,6 @@ import {
   FaGoogle,
   FaLightbulb,
 } from "react-icons/fa";
-import PageSEO from "../components/SEO/PageSEO";
 import Layout from "../components/Shared/Layout";
 
 // Unique Google Ads data layers
@@ -70,12 +69,6 @@ const GoogleAdsPage = () => {
 
   return (
     <>
-      <PageSEO
-        title="Google Ads"
-        description="Expert Google Ads management with high-intent targeting, compelling ad copy, and optimized conversions for profitable ROAS and sustainable growth."
-        keywords="Google Ads, paid advertising, Google PPC, search ads, conversion optimization"
-        url="/google-ads"
-      />
       <Layout>
         <section className="py-[100px] bg-[#f7ffe6] text-[#1C4B42] overflow-hidden relative">
           {/* Soft Ambient Glows consistent with the theme */}

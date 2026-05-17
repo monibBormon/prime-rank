@@ -10,7 +10,6 @@ import {
   FaVideoSlash,
   FaVolumeUp,
 } from "react-icons/fa";
-import PageSEO from "../components/SEO/PageSEO";
 import Layout from "../components/Shared/Layout";
 
 // Dummy Service Data
@@ -64,12 +63,6 @@ const VideoEditingPage = () => {
 
   return (
     <>
-      <PageSEO
-        title="Video Editing"
-        description="Professional video editing services including YouTube optimization, shorts editing, reels creation, and cinematic brand videos for maximum engagement."
-        keywords="video editing, YouTube editing, video production, content creation, shorts editing, reels"
-        url="/video-editing"
-      />
       <Layout>
         <div className="bg-[#f8ffea] text-[#1C4B42] min-h-screen font-sans overflow-x-hidden relative">
           {/* Soft Ambient Vector Glows for Clean Look */}
